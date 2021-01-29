@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #10ac84;
+}
+
+main {
+	margin: 2rem;
+}
+
+button {
+	font-size: 15px;
+	outline: 0;
+	background-color: rgba(255, 255, 255, .9);
+	border: 0;
+	padding: 10px 15px;
+	border-radius: 3px;
+	width: 200px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgba(255, 255, 255, .8);
+}
+
+input {
+	font-size: 15px;
+	width: 200px;
+	padding: 10px 16px;
+	border: none;
+	border-radius: 3px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.card {
+	background: white;
+  	position: relative;
+  	width: 80px;
+  	height: 120px;
+  	margin: 10px 10px 10px 0;
+  	border-radius: 8px;
+	box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+.card p {
+	font-family: 'Open Sans', sans-serif;
+  	font-size: 35px;
+  	line-height: 120px;
+  	text-align: center;
+  	color: inherit;
+  	width: 100%;
+}
+
+.card .fas:first-child {
+	position: absolute;
+  	font-size: 15px;
+  	left: 5px;
+  	top: 5px;
+}
+
+.card .fas:last-child {
+	position: absolute;
+	font-size: 15px;
+	right: 5px;
+	bottom: 5px;
+	transform: rotate(180deg);
+}
+
+div[class*="heart"], div[class*="diamond"] { color: red; }
+div[class*="club"], div[class*="spade"] { color: black }
+
+#cardsDeck {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.title {
+	font-weight: 100;
+	color: white;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: none;
+}
+
+#selectionLog {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#selectionLog div {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+#selectionLog .iteration {
+	width: 40px;
+	font-size: 25px;
+}
